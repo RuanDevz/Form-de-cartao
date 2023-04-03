@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+    background: #1F2937;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+
+img#cartao{
+    margin-top: 60px;
+}
+
+.validacoes{
+    text-align: center;
+    max-width: 327px;
+    margin: 0 auto;
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.subvalidacoes img{
+
+}
+
+
+.subvalidacoes input{
+    order: 1;
+}
+
+.subtitulos{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input{
+    background: #111827;
+    border: 1px solid #374151;
+    font-size: 1em;
+    color: #fff;
+    text-indent: 15px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input:hover{
+    border: 1.5px solid #4B5563;
+}
+
+.input:focus{
+    border: 1.5px solid #9333EA;
+}
+
+
+.validacoes p{
+    color: white;
+    text-align: left;
+}
+
+.validacoes input#numero, input#nome{
+    margin-bottom: 20px;
+    width: 327px;
+    height: 48px;
+}
+
+.validacoes input#validade{
+    margin: 6px;
+    width: 182px;
+    height: 48px;
+}
+
+.validacoes input#cvv{
+    width: 129px;
+    height: 48px;
+}
+
+.protect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    color: #fff;
+}
+
+.btn{
+    max-width: 327px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.btn button{
+    width: 327px;
+    height: 56px;
+    border-radius: 4px;
+    background: #9333EA;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+}
+
+.btn button:hover{
+    background:  #A855F7;
+    transition: .3s;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="card">
+            <img id="cartao" src="Imagens/Credit card.png" alt="">
+        </div>
+
+        <form  autocomplete="off" class="validacoes" method="get">
+            <p>Número do cartão</p>
+            <label for="numero"></label>
+            <input type="number" name="numero" id="numero" placeholder="Numero do seu cartão" maxlength="16" minlength="16">
+
+            <p>Nome do titular</p>
+            <label for="nome"></label>
+            <input type="text" name="nome" id="nome" placeholder="Nome como está no cartão">
+
+            <div class="subvalidacoes">
+                <div class="titulos">
+                    <p>Validade</p>
+                    <div class="subtitulos">
+                        <p>CVV</p>
+                        <img src="Imagens/Question.png" alt="">
+                    </div>
+                </div>
+                <label for="validade"></label>
+                <input  type="number" name="validade" id="validade" placeholder="mm/aa">
+                <label for="cvv"></label>
+                <input type="password" name="cvv" id="cvv" maxlength="3" placeholder="***">
+            </div>
+        </form>
+        <div class="protect">
+            <img src="Imagens/ShieldCheck.png" alt="Check">
+            <p>Seus dados estão seguros</p>
+        </div>
+
+        <div class="btn">
+            <button>Adicionar cartão</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
