@@ -122,3 +122,18 @@ input:hover{
     background:  #A855F7;
     transition: .3s;
 }
+
+@media screen and (min-width: 1280px) {
+    body{
+
+    }
+    main{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 736px;
+        max-height: 420px;
+        background: #374151;
+    }
+}
