@@ -19,7 +19,7 @@
         <form  autocomplete="off" class="validacoes" method="get">
             <p>Número do cartão</p>
             <label for="numero"></label>
-            <input type="number" name="numero" id="numero" placeholder="Numero do seu cartão" maxlength="16" minlength="16">
+            <input type="text" name="numero" id="numero" placeholder="Numero do seu cartão" >
 
             <p>Nome do titular</p>
             <label for="nome"></label>
@@ -30,13 +30,13 @@
                     <p>Validade</p>
                     <div class="subtitulos">
                         <p>CVV</p>
-                        <img id="info" src="Imagens/Question.png" alt="">
+                        <img id="info" src="Imagens/Question.png" alt="ajuda" title="Esta informação fica atrás do seu cartão de crédito ">
                     </div>
                 </div>
                 <label for="validade"></label>
-                <input  type="number" name="validade" id="validade" placeholder="mm/aa">
+                <input type="text" name="validade" id="validade" placeholder="mm/aa">
                 <label for="cvv"></label>
-                <input type="password" name="cvv" id="cvv" maxlength="3" placeholder="***">
+                <input name="cvv" id="cvv" placeholder="***">
             </div>
         </form>
         <div class="protect">
@@ -48,6 +48,8 @@
             <button>Adicionar cartão</button>
         </div>
     </main>
+    <script src="https://unpkg.com/imask"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
